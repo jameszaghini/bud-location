@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170324164342) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "buds", force: :cascade do |t|
     t.string   "identifier"
     t.integer  "session_id"
