@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Buds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Identifier</th>
+      <th>Session</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @buds.each do |bud| %>
+      <tr>
+        <td><%= bud.identifier %></td>
+        <td><%= bud.session_id %></td>
+        <td><%= link_to 'Show', bud %></td>
+        <td><%= link_to 'Edit', edit_bud_path(bud) %></td>
+        <td><%= link_to 'Destroy', bud, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bud', new_bud_path %>

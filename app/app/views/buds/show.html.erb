@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Identifier:</strong>
+  <%= @bud.identifier %>
+</p>
+
+<p>
+  <strong>Session:</strong>
+  <%= @bud.session_id %>
+</p>
+
+<%= link_to 'Edit', edit_bud_path(@bud) %> |
+<%= link_to 'Back', buds_path %>

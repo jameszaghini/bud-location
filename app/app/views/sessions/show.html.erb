@@ -1,0 +1,112 @@
+
+<style>
+.marker {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    background-color: white;
+}
+
+h3 { text-transform: uppercase }
+</style>
+
+<div id='map' style='width: 70%; height: 100vh; margin: 0; float: left'></div>
+
+<script>
+
+mapboxgl.accessToken = 'pk.eyJ1IjoianphZ2hpbmkiLCJhIjoiY2owa2tvaWNrMDBpazJ3bzdpeTV4YW1kayJ9.A8HHaWA8ycpBy7vFTl_n1Q';
+
+var geojson = {
+    "type": "FeatureCollection",
+    "features": [
+      <% @session.buds.each do | bud | %>
+      <% bud.locations.each do | location | %>
+      {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [<%= location.longitude %>, <%= location.latitude %>]
+        },
+        "properties": {
+          "message": "Foo",
+          "iconSize": [5, 5],
+          "title": "YO <%= location.created_at %>"
+        }
+    },
+    <% end %>
+    <% end %>
+    ]
+};
+
+var center = [<%= @session.buds.first.locations.first.longitude %>, <%= @session.buds.first.locations.first.latitude %>]
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    center: center,
+    zoom: 15,
+    style: 'mapbox://styles/mapbox/dark-v9'
+});
+
+// add markers to map
+geojson.features.forEach(function(marker) {
+    // create a DOM element for the marker
+    var el = document.createElement('div');
+    el.className = 'marker';
+    //el.style.backgroundImage = 'url(https://placekitten.com/g/' + marker.properties.iconSize.join('/') + '/)';
+    el.style.width = marker.properties.iconSize[0] + 'px';
+    el.style.height = marker.properties.iconSize[1] + 'px';
+
+    // el.addEventListener('click', function() {
+    //     window.alert(marker.properties.message);
+    // });
+
+    // add marker to map
+    new mapboxgl.Marker(el, {offset: [-marker.properties.iconSize[0] / 2, -marker.properties.iconSize[1] / 2]})
+        .setLngLat(marker.geometry.coordinates)
+        .addTo(map);
+});
+
+</script>
+
+<div style="float: left; margin-left: 20px; ">
+
+  <p id="notice"><%= notice %></p>
+
+  <h3>Platform:</h3>
+  <%= @session.platform %>
+  <h3>Created:</h3>
+  <%= @session.created_at %>
+<hr>
+
+<% @session.buds.each do | bud | %>
+  <h3><%= bud.identifier %></h3>
+
+  <% if !bud.locations.empty? %>
+
+  <table>
+    <tr>
+      <th>LAT</th>
+      <th>LONG</th>
+      <th>DATE</th>
+    </tr>
+  <% bud.locations.each do | location | %>
+    <tr>
+      <td><%= location.latitude %></td>
+      <td><%= location.longitude %></td>
+      <td><%= location.created_at %></td>
+    </tr>
+  <% end %>
+  </table>
+  </script>
+
+  <% else %>
+    No data
+  <% end %>
+
+  <hr>
+
+<% end %>
+
+</div>
