@@ -69,6 +69,6 @@ class BudsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def bud_params
-      params.require(:bud).permit(:identifier, :session_id)
+      params.require(:bud).permit(:identifier, :session_id, :uuid)
     end
 end
