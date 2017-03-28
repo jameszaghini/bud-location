@@ -3154,3 +3154,2089 @@ DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is depreca
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3320841543469492665)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/sessions/1" for ::1 at 2017-03-24 23:41:03 +1000
+Started GET "/" for ::1 at 2017-03-24 23:41:03 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (5.2ms)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mSession Load (0.8ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 35ms (ActiveRecord: 7.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Session with 'id'=1):
+  
+app/controllers/sessions_controller.rb:67:in `set_session'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.4ms)
+Started GET "/" for ::1 at 2017-03-24 23:41:10 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (3.1ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-24 23:41:13 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-24 23:41:14 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.5ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Session with 'id'=1):
+  
+app/controllers/sessions_controller.rb:67:in `set_session'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.9ms)
+Started GET "/sessions/" for ::1 at 2017-03-24 23:41:17 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.4ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.8ms)
+Started GET "/sessions/" for ::1 at 2017-03-24 23:41:17 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 90ms (Views: 88.7ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 223ms (Views: 220.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-03-24 23:46:59 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-24 23:47:02 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-24 23:47:03 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Session with 'id'=1):
+  
+app/controllers/sessions_controller.rb:67:in `set_session'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.2ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.6ms)
+Started GET "/sessions" for ::1 at 2017-03-24 23:47:03 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions" for ::1 at 2017-03-24 23:47:03 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:38:43 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 16ms (ActiveRecord: 2.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Session with 'id'=1):
+  
+app/controllers/sessions_controller.rb:67:in `set_session'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.1ms)
+Started GET "/sessions/" for ::1 at 2017-03-25 12:39:03 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.5ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 35ms (Views: 32.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sessions/" for ::1 at 2017-03-25 12:39:03 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for ::1 at 2017-03-25 12:39:07 +1000
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (56.1ms)
+  Rendered sessions/new.html.erb within layouts/application (59.6ms)
+Completed 200 OK in 87ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2017-03-25 12:39:12 +1000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jvzt1tHr6gzbVvBcWN1Okul/D+kJLxejeBeT/h/pZv091H2+7uceDajX/gpjfqaqhUCb7MnNNpO+4bbBdWYf6A==", "session"=>{"platform"=>"iOS"}, "commit"=>"Create Session"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.5ms)[0m  [1m[32mINSERT INTO "sessions" ("platform", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["platform", "iOS"], ["created_at", 2017-03-25 02:39:12 UTC], ["updated_at", 2017-03-25 02:39:12 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/sessions/1
+Completed 302 Found in 9ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:39:12 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.8ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.9ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  Rendered sessions/show.html.erb within layouts/application (29.9ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 5.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `locations' for nil:NilClass):
+    40:     ]
+    41: };
+    42: 
+    43: var center = [<%= @session.buds.first.locations.first.longitude %>, <%= @session.buds.first.locations.first.latitude %>]
+    44: 
+    45: var map = new mapboxgl.Map({
+    46:     container: 'map',
+  
+app/views/sessions/show.html.erb:43:in `_app_views_sessions_show_html_erb___1814060600822715696_70176668370300'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.8ms)
+Started GET "/" for ::1 at 2017-03-25 12:39:34 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-25 12:39:38 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (11.5ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:39:39 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  Rendered sessions/show.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `locations' for nil:NilClass):
+    40:     ]
+    41: };
+    42: 
+    43: var center = [<%= @session.buds.first.locations.first.longitude %>, <%= @session.buds.first.locations.first.latitude %>]
+    44: 
+    45: var map = new mapboxgl.Map({
+    46:     container: 'map',
+  
+app/views/sessions/show.html.erb:43:in `_app_views_sessions_show_html_erb___1814060600822715696_70176719073620'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.7ms)
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:39:39 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.1ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  Rendered sessions/show.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `locations' for nil:NilClass):
+    40:     ]
+    41: };
+    42: 
+    43: var center = [<%= @session.buds.first.locations.first.longitude %>, <%= @session.buds.first.locations.first.latitude %>]
+    44: 
+    45: var map = new mapboxgl.Map({
+    46:     container: 'map',
+  
+app/views/sessions/show.html.erb:43:in `_app_views_sessions_show_html_erb___1814060600822715696_70176730641240'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.6ms)
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:40:45 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  Rendered sessions/show.html.erb within layouts/application (36.4ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `buds' for #<ActionDispatch::Request::Session:0x007fa6970323f8>):
+    40:     ]
+    41: };
+    42: 
+    43: <% if !session.buds.empty? %>
+    44: var center = [<%= @session.buds.first.locations.first.longitude %>, <%= @session.buds.first.locations.first.latitude %>]
+    45: <% else %>
+    46: var center = [0,0]
+  
+app/views/sessions/show.html.erb:43:in `_app_views_sessions_show_html_erb___1814060600822715696_70176720394940'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.1ms)
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:40:50 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  Rendered sessions/show.html.erb within layouts/application (31.7ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `buds' for #<ActionDispatch::Request::Session:0x007fa691d73c70>):
+    40:     ]
+    41: };
+    42: 
+    43: <% if !session.buds.empty? %>
+    44: var center = [<%= @session.buds.first.locations.first.longitude %>, <%= @session.buds.first.locations.first.latitude %>]
+    45: <% else %>
+    46: var center = [0,0]
+  
+app/views/sessions/show.html.erb:43:in `_app_views_sessions_show_html_erb___1814060600822715696_70176696236860'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.7ms)
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:41:21 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.6ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  Rendered sessions/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 22.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sessions/" for ::1 at 2017-03-25 12:41:36 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:41:37 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  Rendered sessions/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-03-25 12:41:38 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buds/1" for ::1 at 2017-03-25 12:41:39 +1000
+Processing by BudsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 8ms (ActiveRecord: 5.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bud with 'id'=1):
+  
+app/controllers/buds_controller.rb:67:in `set_bud'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.2ms)
+Started GET "/buds" for ::1 at 2017-03-25 12:41:39 +1000
+Processing by BudsController#index as HTML
+  Rendering buds/index.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds"[0m
+  Rendered buds/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/buds" for ::1 at 2017-03-25 12:41:40 +1000
+Processing by BudsController#index as HTML
+  Rendering buds/index.html.erb within layouts/application
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT "buds".* FROM "buds"[0m
+  Rendered buds/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/buds/new" for ::1 at 2017-03-25 12:41:42 +1000
+Processing by BudsController#new as HTML
+  Rendering buds/new.html.erb within layouts/application
+  Rendered buds/_form.html.erb (3.0ms)
+  Rendered buds/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 27ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/buds" for ::1 at 2017-03-25 12:41:50 +1000
+Processing by BudsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N4jKGeiWvaa69QFLGBAhQXSCmCBpsEnQUsKuf75eulbx4oG3sQeLc9o27uHOKAAEofKVt4Z0k2cBzJr2Sm4ZvQ==", "bud"=>{"identifier"=>"LEFT", "session_id"=>"1"}, "commit"=>"Create Bud"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "buds" ("identifier", "session_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["identifier", "LEFT"], ["session_id", 1], ["created_at", 2017-03-25 02:41:50 UTC], ["updated_at", 2017-03-25 02:41:50 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/buds/1
+Completed 302 Found in 15ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/buds/1" for ::1 at 2017-03-25 12:41:50 +1000
+Processing by BudsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering buds/show.html.erb within layouts/application
+  Rendered buds/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/buds" for ::1 at 2017-03-25 12:41:52 +1000
+Processing by BudsController#index as HTML
+  Rendering buds/index.html.erb within layouts/application
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT "buds".* FROM "buds"[0m
+  Rendered buds/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/buds/new" for ::1 at 2017-03-25 12:41:54 +1000
+Processing by BudsController#new as HTML
+  Rendering buds/new.html.erb within layouts/application
+  Rendered buds/_form.html.erb (1.8ms)
+  Rendered buds/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/buds" for ::1 at 2017-03-25 12:42:00 +1000
+Processing by BudsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OAHAUMOVhGGYALVoCzRl8YeK1IWY/9tHNwzKZFwo38D+a4v+mgSytPjDWsLdDES0UvrZEnc7AfBkAv7tqBh8Kw==", "bud"=>{"identifier"=>"RIGHT bud", "session_id"=>"1"}, "commit"=>"Create Bud"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSession Load (0.1ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buds" ("identifier", "session_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["identifier", "RIGHT bud"], ["session_id", 1], ["created_at", 2017-03-25 02:42:00 UTC], ["updated_at", 2017-03-25 02:42:00 UTC]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/buds/2
+Completed 302 Found in 10ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/buds/2" for ::1 at 2017-03-25 12:42:00 +1000
+Processing by BudsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering buds/show.html.erb within layouts/application
+  Rendered buds/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/buds" for ::1 at 2017-03-25 12:42:01 +1000
+Processing by BudsController#index as HTML
+  Rendering buds/index.html.erb within layouts/application
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT "buds".* FROM "buds"[0m
+  Rendered buds/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/buds/2/edit" for ::1 at 2017-03-25 12:42:03 +1000
+Processing by BudsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering buds/edit.html.erb within layouts/application
+  Rendered buds/_form.html.erb (2.7ms)
+  Rendered buds/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 32ms (Views: 23.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/buds/2" for ::1 at 2017-03-25 12:42:14 +1000
+Processing by BudsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OmXVruQrcnvlcb4L3TpAGupnVg33K468RnzlMQSkOpboWNB6E5O7T7sTA1oH+zb805vPJUE4tItlEFcNG1B33g==", "bud"=>{"identifier"=>"RIGHT", "session_id"=>"1"}, "commit"=>"Update Bud", "id"=>"2"}
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSession Load (0.1ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "buds" SET "identifier" = $1, "updated_at" = $2 WHERE "buds"."id" = $3[0m  [["identifier", "RIGHT"], ["updated_at", 2017-03-25 02:42:14 UTC], ["id", 2]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/buds/2
+Completed 302 Found in 6ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/buds/2" for ::1 at 2017-03-25 12:42:14 +1000
+Processing by BudsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering buds/show.html.erb within layouts/application
+  Rendered buds/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/buds/new" for ::1 at 2017-03-25 12:42:19 +1000
+Processing by BudsController#new as HTML
+Started GET "/buds" for ::1 at 2017-03-25 12:42:19 +1000
+  Rendering buds/new.html.erb within layouts/application
+  Rendered buds/_form.html.erb (1.5ms)
+  Rendered buds/new.html.erb within layouts/application (2.7ms)
+Processing by BudsController#index as HTML
+  Rendering buds/index.html.erb within layouts/application
+  [1m[36mBud Load (4.7ms)[0m  [1m[34mSELECT "buds".* FROM "buds"[0m
+  Rendered buds/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 25ms (Views: 19.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/buds/1" for ::1 at 2017-03-25 12:42:19 +1000
+Processing by BudsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering buds/show.html.erb within layouts/application
+  Rendered buds/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-25 12:42:20 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-25 12:42:21 +1000
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/_form.html.erb (2.7ms)
+  Rendered locations/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 40ms (Views: 24.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-25 12:42:21 +1000
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-25 12:42:22 +1000
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-25 12:42:24 +1000
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/_form.html.erb (2.6ms)
+  Rendered locations/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/locations" for ::1 at 2017-03-25 12:42:43 +1000
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HvZLZki85I+Hq32oQd7OEb+MUb7fHnuZU+U2KWO8GICrvrZu4sI+EAWXJwGXs5hVogXkSBWcRguJptFf5JaFkQ==", "location"=>{"latitude"=>"-27.5510", "longitude"=>"153.034", "accuracy"=>"10", "bud_id"=>"1"}, "commit"=>"Create Location"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "locations" ("latitude", "longitude", "accuracy", "bud_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", -27.551], ["longitude", 153.034], ["accuracy", 10.0], ["bud_id", 1], ["created_at", 2017-03-25 02:42:43 UTC], ["updated_at", 2017-03-25 02:42:43 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/locations/1
+Completed 302 Found in 10ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/locations/1" for ::1 at 2017-03-25 12:42:43 +1000
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering locations/show.html.erb within layouts/application
+  Rendered locations/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-25 12:42:44 +1000
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-25 12:42:46 +1000
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/_form.html.erb (2.3ms)
+  Rendered locations/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/locations" for ::1 at 2017-03-25 12:43:05 +1000
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HnSCWFkSOtOeUQY2Nnixqt9M+EtK2DAywi0DHecLpNqrPH9Q82zgTBxtXJ/gFefuwsVNvYBaDaAYbuRrYCE5yw==", "location"=>{"latitude"=>"-27.5512", "longitude"=>"153.034 ", "accuracy"=>"10", "bud_id"=>"2"}, "commit"=>"Create Location"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "locations" ("latitude", "longitude", "accuracy", "bud_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", -27.5512], ["longitude", 153.034], ["accuracy", 10.0], ["bud_id", 2], ["created_at", 2017-03-25 02:43:05 UTC], ["updated_at", 2017-03-25 02:43:05 UTC]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/locations/2
+Completed 302 Found in 12ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/locations/2" for ::1 at 2017-03-25 12:43:05 +1000
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLocation Load (0.5ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering locations/show.html.erb within layouts/application
+  Rendered locations/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-03-25 12:43:10 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:43:11 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sessions" for ::1 at 2017-03-25 12:43:11 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions" for ::1 at 2017-03-25 12:43:12 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions" for ::1 at 2017-03-25 12:43:14 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-25 12:44:11 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 37ms (Views: 28.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-25 12:44:11 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 37ms (Views: 34.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:44:15 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (34.6ms)
+Completed 200 OK in 57ms (Views: 47.0ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:46:31 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.6ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:47:35 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:49:16 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.5ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.5ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:54:25 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-03-25 12:54:43 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-25 12:54:43 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/1/edit" for ::1 at 2017-03-25 12:54:46 +1000
+Processing by SessionsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/edit.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (1.7ms)
+  Rendered sessions/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:54:53 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:58:45 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:58:55 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.1ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.1ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-03-25 12:58:55 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-25 12:58:56 +1000
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/_form.html.erb (2.7ms)
+  Rendered locations/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-25 12:58:57 +1000
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-25 12:58:58 +1000
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-25 12:59:00 +1000
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/_form.html.erb (2.6ms)
+  Rendered locations/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/locations" for ::1 at 2017-03-25 12:59:24 +1000
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8cpmcxQqvC3XPqCD+tYu/bif9QCLxGGjfHPr6jwLYJZEgpt7vlRmslUC+iosu3i5pRZA9kFGXDGmMAycuyH9hw==", "location"=>{"latitude"=>"-27.5513", "longitude"=>"153.035", "accuracy"=>"10", "bud_id"=>"1"}, "commit"=>"Create Location"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (6.5ms)[0m  [1m[32mINSERT INTO "locations" ("latitude", "longitude", "accuracy", "bud_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", -27.5513], ["longitude", 153.035], ["accuracy", 10.0], ["bud_id", 1], ["created_at", 2017-03-25 02:59:24 UTC], ["updated_at", 2017-03-25 02:59:24 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/locations/3
+Completed 302 Found in 12ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/locations/3" for ::1 at 2017-03-25 12:59:24 +1000
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering locations/show.html.erb within layouts/application
+  Rendered locations/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-03-25 12:59:27 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:59:28 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:59:29 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.4ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:59:37 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 12:59:41 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.1ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.1ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/locations/3" for ::1 at 2017-03-25 12:59:44 +1000
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering locations/show.html.erb within layouts/application
+  Rendered locations/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-25 12:59:47 +1000
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-25 12:59:49 +1000
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/_form.html.erb (2.1ms)
+  Rendered locations/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/locations" for ::1 at 2017-03-25 13:00:07 +1000
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qk2W69Auk/LKNP3JWOvtcPIAOCi50jeTg6Vw7GK9oXofBWvjelBJbUgIp2COhrs074mN3nNQCgFZ5pea5Zc8aw==", "location"=>{"latitude"=>"-27.5511", "longitude"=>"153.036", "accuracy"=>"10", "bud_id"=>"1"}, "commit"=>"Create Location"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "locations" ("latitude", "longitude", "accuracy", "bud_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["latitude", -27.5511], ["longitude", 153.036], ["accuracy", 10.0], ["bud_id", 1], ["created_at", 2017-03-25 03:00:07 UTC], ["updated_at", 2017-03-25 03:00:07 UTC]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/locations/4
+Completed 302 Found in 11ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/locations/4" for ::1 at 2017-03-25 13:00:07 +1000
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering locations/show.html.erb within layouts/application
+  Rendered locations/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-25 13:00:10 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 13:00:10 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.1ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sessions" for ::1 at 2017-03-25 13:00:11 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions" for ::1 at 2017-03-25 13:00:12 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 13:00:14 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 13:00:19 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 13:00:38 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.1ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 13:01:10 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 13:02:24 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.1ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.1ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 13:02:36 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 13:02:48 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 13:02:53 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.1ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 13:03:43 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.1ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.1ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 14:02:06 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.1ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.1ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sessions" for ::1 at 2017-03-25 14:02:26 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-25 14:13:56 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-25 16:46:05 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-25 16:46:12 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-27 13:37:07 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (23.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (24.7ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (44.5ms)
+Completed 200 OK in 298ms (Views: 244.9ms | ActiveRecord: 35.4ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-27 13:38:13 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (1.9ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (8.1ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (7.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (65.5ms)
+Completed 200 OK in 105ms (Views: 70.0ms | ActiveRecord: 24.1ms)
+
+
+Started GET "/" for ::1 at 2017-03-27 14:46:10 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.5ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 333ms (Views: 312.6ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/api/v1/locations/create" for ::1 at 2017-03-27 14:46:33 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/locations/create"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (13.1ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.6ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (13.7ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (121.2ms)
+Started GET "/api/v1/locations/create" for 127.0.0.1 at 2017-03-27 14:49:43 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/locations/create"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (5.6ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (81.2ms)
+Started POST "/api/v1/locations/create" for 127.0.0.1 at 2017-03-27 14:50:01 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/locations/create"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (5.0ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (77.9ms)
+Started POST "/api/v1/locations/create" for 127.0.0.1 at 2017-03-27 14:50:24 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/locations/create"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (5.0ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.2ms)
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-27 14:50:29 +1000
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:3)
+Processing by ApiLocationsController#create as HTML
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.0.2) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.0.2) lib/action_controller/metal/request_forgery_protection.rb:223:in `handle_unverified_request'
+actionpack (5.0.2) lib/action_controller/metal/request_forgery_protection.rb:218:in `verify_authenticity_token'
+activesupport (5.0.2) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+activesupport (5.0.2) lib/active_support/callbacks.rb:169:in `block (2 levels) in halting'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.0.2) lib/active_support/callbacks.rb:170:in `block in halting'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.2ms)
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-27 14:50:54 +1000
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:3)
+Processing by ApiLocationsController#create as HTML
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.0.2) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.0.2) lib/action_controller/metal/request_forgery_protection.rb:223:in `handle_unverified_request'
+actionpack (5.0.2) lib/action_controller/metal/request_forgery_protection.rb:218:in `verify_authenticity_token'
+activesupport (5.0.2) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+activesupport (5.0.2) lib/active_support/callbacks.rb:169:in `block (2 levels) in halting'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.0.2) lib/active_support/callbacks.rb:170:in `block in halting'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.4ms)
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-27 14:51:25 +1000
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:3)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:4)
+Processing by ApiLocationsController#create as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+JSON::ParserError (743: unexpected token at ''):
+  
+app/controllers/api_locations_controller.rb:13:in `parse_request'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.2ms)
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-27 14:52:23 +1000
+Processing by ApiLocationsController#create as HTML
+  Parameters: {"session"=>{"identifier"=>"a"}, "api_location"=>{"session"=>{"identifier"=>"a"}}}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find_or_create' for #<Class:0x007ff24487f0d0>
+Did you mean?  find_or_create_by
+               find_or_create_by!
+               first_or_create):
+  
+app/controllers/api_locations_controller.rb:7:in `create'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.3ms)
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-27 14:52:47 +1000
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:3)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:4)
+Processing by ApiLocationsController#create as HTML
+  Parameters: {"session"=>{"identifier"=>"a"}, "api_location"=>{"session"=>{"identifier"=>"a"}}}
+  [1m[36mSession Load (0.5ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."identifier" = $1 LIMIT $2[0m  [["identifier", "a"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column sessions.identifier does not exist
+LINE 1: SELECT  "sessions".* FROM "sessions" WHERE "sessions"."ident...
+                                                   ^
+: SELECT  "sessions".* FROM "sessions" WHERE "sessions"."identifier" = $1 LIMIT $2):
+  
+app/controllers/api_locations_controller.rb:7:in `create'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.1ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.5ms)
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-27 14:58:34 +1000
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:3)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:4)
+Processing by ApiLocationsController#create as HTML
+  Parameters: {"session"=>{"id"=>"1"}, "api_location"=>{"session"=>{"id"=>"1"}}}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 2.4ms)
+
+
+  [1m[35m (12.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3320841543469492665);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUuidToSessions (20170327050257)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (24.3ms)[0m  [1m[35mALTER TABLE "sessions" ADD "uuid" character varying[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170327050257"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUuidToBuds (20170327050318)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "buds" ADD "uuid" character varying[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170327050318"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(3320841543469492665)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-27 15:04:14 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:3)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:4)
+Processing by ApiLocationsController#create as HTML
+  Parameters: {"session"=>{"uuid"=>"a"}, "api_location"=>{"session"=>{"uuid"=>"a"}}}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."uuid" = $1 LIMIT $2[0m  [["uuid", "a"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.2ms)[0m  [1m[32mINSERT INTO "sessions" ("created_at", "updated_at", "uuid") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", 2017-03-27 05:04:14 UTC], ["updated_at", 2017-03-27 05:04:14 UTC], ["uuid", "a"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 33ms (Views: 0.8ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/" for ::1 at 2017-03-27 15:04:30 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.5ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 216ms (Views: 213.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sessions/1" for ::1 at 2017-03-27 15:04:31 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 69ms (Views: 56.3ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/session" for ::1 at 2017-03-27 15:04:32 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [26 times] (5.5ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.6ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (84.8ms)
+Started GET "/sessions/1" for ::1 at 2017-03-27 15:04:33 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sessions" for ::1 at 2017-03-27 15:04:34 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/" for ::1 at 2017-03-27 15:04:35 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/2" for ::1 at 2017-03-27 15:04:35 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 28.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-27 15:17:32 +1000
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:3)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:4)
+Processing by ApiLocationsController#create as HTML
+  Parameters: {"session"=>{"uuid"=>"a", "platform"=>"iOS"}, "bud"=>{"uuid"=>"a", "identifier"=>"Left"}, "location"=>{"latitude"=>"-23.5", "longitude"=>"153.1"}, "api_location"=>{"session"=>{"uuid"=>"a", "platform"=>"iOS"}, "bud"=>{"uuid"=>"a", "identifier"=>"Left"}, "location"=>{"latitude"=>"-23.5", "longitude"=>"153.1"}}}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."uuid" = $1 LIMIT $2[0m  [["uuid", "a"], ["LIMIT", 1]]
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."uuid" = $1 LIMIT $2[0m  [["uuid", "a"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 42ms (Views: 0.5ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/sessions/2" for ::1 at 2017-03-27 15:17:47 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-27 15:22:46 +1000
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:3)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:4)
+Processing by ApiLocationsController#create as HTML
+  Parameters: {"session"=>{"uuid"=>"a", "platform"=>"iOS"}, "bud"=>{"uuid"=>"a", "identifier"=>"Left"}, "location"=>{"latitude"=>"-23.5", "longitude"=>"153.1"}, "api_location"=>{"session"=>{"uuid"=>"a", "platform"=>"iOS"}, "bud"=>{"uuid"=>"a", "identifier"=>"Left"}, "location"=>{"latitude"=>"-23.5", "longitude"=>"153.1"}}}
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."uuid" = $1 LIMIT $2[0m  [["uuid", "a"], ["LIMIT", 1]]
+  [1m[36mBud Load (0.5ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."uuid" = $1 LIMIT $2[0m  [["uuid", "a"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.3ms)[0m  [1m[33mUPDATE "sessions" SET "platform" = $1, "updated_at" = $2 WHERE "sessions"."id" = $3[0m  [["platform", "iOS"], ["updated_at", 2017-03-27 05:22:46 UTC], ["id", 2]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 49ms (Views: 0.6ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/sessions/2" for ::1 at 2017-03-27 15:23:02 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSession Load (0.4ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 2]]
+  Rendered sessions/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 33ms (Views: 30.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-27 15:23:22 +1000
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:3)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:4)
+Processing by ApiLocationsController#create as HTML
+  Parameters: {"session"=>{"uuid"=>"a", "platform"=>"iOS"}, "bud"=>{"uuid"=>"a", "identifier"=>"Left"}, "location"=>{"latitude"=>"-23.5", "longitude"=>"153.1"}, "api_location"=>{"session"=>{"uuid"=>"a", "platform"=>"iOS"}, "bud"=>{"uuid"=>"a", "identifier"=>"Left"}, "location"=>{"latitude"=>"-23.5", "longitude"=>"153.1"}}}
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."uuid" = $1 LIMIT $2[0m  [["uuid", "a"], ["LIMIT", 1]]
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."uuid" = $1 LIMIT $2[0m  [["uuid", "a"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.7ms)[0m  [1m[32mINSERT INTO "buds" ("identifier", "session_id", "created_at", "updated_at", "uuid") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["identifier", "Left"], ["session_id", 2], ["created_at", 2017-03-27 05:23:22 UTC], ["updated_at", 2017-03-27 05:23:22 UTC], ["uuid", "a"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 38ms (Views: 0.6ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/sessions/2" for ::1 at 2017-03-27 15:23:25 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 2]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 3]]
+  Rendered sessions/show.html.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `longitude' for nil:NilClass):
+    41: };
+    42: 
+    43: <% if !@session.buds.empty? %>
+    44: var center = [<%= @session.buds.first.locations.first.longitude %>, <%= @session.buds.first.locations.first.latitude %>]
+    45: <% else %>
+    46: var center = [0,0]
+    47: <% end %>
+  
+app/views/sessions/show.html.erb:44:in `_app_views_sessions_show_html_erb___4034037466305657986_70183657473980'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.5ms)
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-27 15:24:00 +1000
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:3)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:4)
+Processing by ApiLocationsController#create as HTML
+  Parameters: {"session"=>{"uuid"=>"a", "platform"=>"iOS"}, "bud"=>{"uuid"=>"a", "identifier"=>"Left"}, "location"=>{"latitude"=>"-23.5", "longitude"=>"153.1"}, "api_location"=>{"session"=>{"uuid"=>"a", "platform"=>"iOS"}, "bud"=>{"uuid"=>"a", "identifier"=>"Left"}, "location"=>{"latitude"=>"-23.5", "longitude"=>"153.1"}}}
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."uuid" = $1 LIMIT $2[0m  [["uuid", "a"], ["LIMIT", 1]]
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."uuid" = $1 LIMIT $2[0m  [["uuid", "a"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 35ms (Views: 0.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/sessions/2" for ::1 at 2017-03-27 15:24:02 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSession Load (0.3ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 2]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 3]]
+  Rendered sessions/show.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `longitude' for nil:NilClass):
+    41: };
+    42: 
+    43: <% if !@session.buds.empty? %>
+    44: var center = [<%= @session.buds.first.locations.first.longitude %>, <%= @session.buds.first.locations.first.latitude %>]
+    45: <% else %>
+    46: var center = [0,0]
+    47: <% end %>
+  
+app/views/sessions/show.html.erb:44:in `_app_views_sessions_show_html_erb___4034037466305657986_70183674918520'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.3ms)
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-27 15:24:25 +1000
+Processing by ApiLocationsController#create as HTML
+  Parameters: {"session"=>{"uuid"=>"b", "platform"=>"iOS"}, "bud"=>{"uuid"=>"a", "identifier"=>"Left"}, "location"=>{"latitude"=>"-23.5", "longitude"=>"153.1"}, "api_location"=>{"session"=>{"uuid"=>"b", "platform"=>"iOS"}, "bud"=>{"uuid"=>"a", "identifier"=>"Left"}, "location"=>{"latitude"=>"-23.5", "longitude"=>"153.1"}}}
+  [1m[36mSession Load (0.7ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."uuid" = $1 LIMIT $2[0m  [["uuid", "b"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "sessions" ("created_at", "updated_at", "uuid") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", 2017-03-27 05:24:25 UTC], ["updated_at", 2017-03-27 05:24:25 UTC], ["uuid", "b"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBud Load (0.4ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."uuid" = $1 LIMIT $2[0m  [["uuid", "a"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "buds" SET "session_id" = $1, "updated_at" = $2 WHERE "buds"."id" = $3[0m  [["session_id", 3], ["updated_at", 2017-03-27 05:24:25 UTC], ["id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "sessions" SET "platform" = $1, "updated_at" = $2 WHERE "sessions"."id" = $3[0m  [["platform", "iOS"], ["updated_at", 2017-03-27 05:24:25 UTC], ["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/sessions/" for ::1 at 2017-03-27 15:24:30 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.4ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sessions/3" for ::1 at 2017-03-27 15:24:31 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSession Load (0.6ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.8ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 3]]
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 3]]
+  Rendered sessions/show.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `longitude' for nil:NilClass):
+    41: };
+    42: 
+    43: <% if !@session.buds.empty? %>
+    44: var center = [<%= @session.buds.first.locations.first.longitude %>, <%= @session.buds.first.locations.first.latitude %>]
+    45: <% else %>
+    46: var center = [0,0]
+    47: <% end %>
+  
+app/views/sessions/show.html.erb:44:in `_app_views_sessions_show_html_erb___4034037466305657986_70183657069000'
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/james/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.9ms)
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-27 15:39:06 +1000
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:3)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:4)
+Processing by ApiLocationsController#create as HTML
+  Parameters: {"session"=>{"uuid"=>"c", "platform"=>"iOS"}, "bud"=>{"uuid"=>"c", "identifier"=>"Left"}, "location"=>{"latitude"=>"-23.5", "longitude"=>"153.1"}, "api_location"=>{"session"=>{"uuid"=>"c", "platform"=>"iOS"}, "bud"=>{"uuid"=>"c", "identifier"=>"Left"}, "location"=>{"latitude"=>"-23.5", "longitude"=>"153.1"}}}
+  [1m[36mSession Load (0.1ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."uuid" = $1 LIMIT $2[0m  [["uuid", "c"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "sessions" ("created_at", "updated_at", "uuid") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", 2017-03-27 05:39:06 UTC], ["updated_at", 2017-03-27 05:39:06 UTC], ["uuid", "c"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."uuid" = $1 LIMIT $2[0m  [["uuid", "c"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buds" ("identifier", "session_id", "created_at", "updated_at", "uuid") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["identifier", "Left"], ["session_id", 4], ["created_at", 2017-03-27 05:39:06 UTC], ["updated_at", 2017-03-27 05:39:06 UTC], ["uuid", "c"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBud Load (0.1ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "locations" ("latitude", "longitude", "bud_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["latitude", -23.5], ["longitude", 153.1], ["bud_id", 4], ["created_at", 2017-03-27 05:39:06 UTC], ["updated_at", 2017-03-27 05:39:06 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "sessions" SET "platform" = $1, "updated_at" = $2 WHERE "sessions"."id" = $3[0m  [["platform", "iOS"], ["updated_at", 2017-03-27 05:39:06 UTC], ["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 52ms (Views: 0.4ms | ActiveRecord: 15.3ms)
+
+
+Started GET "/sessions/" for ::1 at 2017-03-27 15:39:24 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/4" for ::1 at 2017-03-27 15:39:25 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 4]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 4]]
+  Rendered sessions/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 39ms (Views: 34.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sessions/4" for ::1 at 2017-03-27 15:40:50 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 4]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 4]]
+  Rendered sessions/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 30ms (Views: 26.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-27 15:43:39 +1000
+Processing by ApiLocationsController#create as HTML
+  Parameters: {"session"=>{"uuid"=>"e", "platform"=>"iOS"}, "bud"=>{"uuid"=>"e", "identifier"=>"Left"}, "location"=>{"latitude"=>"-27.5525398", "longitude"=>"153.034945"}, "api_location"=>{"session"=>{"uuid"=>"e", "platform"=>"iOS"}, "bud"=>{"uuid"=>"e", "identifier"=>"Left"}, "location"=>{"latitude"=>"-27.5525398", "longitude"=>"153.034945"}}}
+  [1m[36mSession Load (0.8ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."uuid" = $1 LIMIT $2[0m  [["uuid", "e"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "sessions" ("created_at", "updated_at", "uuid") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", 2017-03-27 05:43:39 UTC], ["updated_at", 2017-03-27 05:43:39 UTC], ["uuid", "e"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBud Load (0.3ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."uuid" = $1 LIMIT $2[0m  [["uuid", "e"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSession Load (0.1ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buds" ("identifier", "session_id", "created_at", "updated_at", "uuid") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["identifier", "Left"], ["session_id", 5], ["created_at", 2017-03-27 05:43:39 UTC], ["updated_at", 2017-03-27 05:43:39 UTC], ["uuid", "e"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBud Load (0.1ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "locations" ("latitude", "longitude", "bud_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["latitude", -27.5525398], ["longitude", 153.034945], ["bud_id", 5], ["created_at", 2017-03-27 05:43:39 UTC], ["updated_at", 2017-03-27 05:43:39 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "sessions" SET "platform" = $1, "updated_at" = $2 WHERE "sessions"."id" = $3[0m  [["platform", "iOS"], ["updated_at", 2017-03-27 05:43:39 UTC], ["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/sessions/5" for ::1 at 2017-03-27 15:43:52 +1000
+Processing by SessionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering sessions/show.html.erb within layouts/application
+  [1m[36mBud Load (0.4ms)[0m  [1m[34mSELECT "buds".* FROM "buds" WHERE "buds"."session_id" = $1[0m  [["session_id", 5]]
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."bud_id" = $1[0m  [["bud_id", 5]]
+  Rendered sessions/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 55ms (Views: 51.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-03-27 16:28:51 +1000
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-03-28 12:53:29 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  [1m[36mSession Load (0.5ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions"[0m
+  Rendered sessions/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 239ms (Views: 217.3ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-28 13:02:23 +1000
+DEPRECATION WARNING: skip_before_filter is deprecated and will be removed in Rails 5.1. Use skip_before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:3)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApiLocationsController> at /Users/james/dev/bud-location/app/controllers/api_locations_controller.rb:4)
+Processing by ApiLocationsController#create as HTML
+  Parameters: {"session"=>{"uuid"=>"e", "platform"=>"iOS"}, "bud"=>{"uuid"=>"e", "identifier"=>"Left"}, "location"=>{"latitude"=>"-27.5525398", "longitude"=>"153.034945"}, "api_location"=>{"session"=>{"uuid"=>"e", "platform"=>"iOS"}, "bud"=>{"uuid"=>"e", "identifier"=>"Left"}, "location"=>{"latitude"=>"-27.5525398", "longitude"=>"153.034945"}}}
+  [1m[36mSession Load (1.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."uuid" = $1 LIMIT $2[0m  [["uuid", "e"], ["LIMIT", 1]]
+  [1m[36mBud Load (0.7ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."uuid" = $1 AND "buds"."session_id" = $2 ORDER BY "buds"."id" ASC LIMIT $3[0m  [["uuid", "e"], ["session_id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBud Load (0.2ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (6.2ms)[0m  [1m[32mINSERT INTO "locations" ("latitude", "longitude", "bud_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["latitude", -27.5525398], ["longitude", 153.034945], ["bud_id", 5], ["created_at", 2017-03-28 03:02:23 UTC], ["updated_at", 2017-03-28 03:02:23 UTC]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 105ms (Views: 1.1ms | ActiveRecord: 19.8ms)
+
+
+Started POST "/api/v1/locations" for 127.0.0.1 at 2017-03-28 13:02:34 +1000
+Processing by ApiLocationsController#create as HTML
+  Parameters: {"session"=>{"uuid"=>"f", "platform"=>"iOS"}, "bud"=>{"uuid"=>"f", "identifier"=>"Left"}, "location"=>{"latitude"=>"-27.5525398", "longitude"=>"153.034945"}, "api_location"=>{"session"=>{"uuid"=>"f", "platform"=>"iOS"}, "bud"=>{"uuid"=>"f", "identifier"=>"Left"}, "location"=>{"latitude"=>"-27.5525398", "longitude"=>"153.034945"}}}
+  [1m[36mSession Load (1.3ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."uuid" = $1 LIMIT $2[0m  [["uuid", "f"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "sessions" ("created_at", "updated_at", "uuid") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", 2017-03-28 03:02:34 UTC], ["updated_at", 2017-03-28 03:02:34 UTC], ["uuid", "f"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBud Load (0.6ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."uuid" = $1 AND "buds"."session_id" = $2 ORDER BY "buds"."id" ASC LIMIT $3[0m  [["uuid", "f"], ["session_id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSession Load (0.1ms)[0m  [1m[34mSELECT  "sessions".* FROM "sessions" WHERE "sessions"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buds" ("session_id", "created_at", "updated_at", "uuid") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["session_id", 6], ["created_at", 2017-03-28 03:02:34 UTC], ["updated_at", 2017-03-28 03:02:34 UTC], ["uuid", "f"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "buds" SET "identifier" = $1, "updated_at" = $2 WHERE "buds"."id" = $3[0m  [["identifier", "Left"], ["updated_at", 2017-03-28 03:02:34 UTC], ["id", 6]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBud Load (0.1ms)[0m  [1m[34mSELECT  "buds".* FROM "buds" WHERE "buds"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "locations" ("latitude", "longitude", "bud_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["latitude", -27.5525398], ["longitude", 153.034945], ["bud_id", 6], ["created_at", 2017-03-28 03:02:34 UTC], ["updated_at", 2017-03-28 03:02:34 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "sessions" SET "platform" = $1, "updated_at" = $2 WHERE "sessions"."id" = $3[0m  [["platform", "iOS"], ["updated_at", 2017-03-28 03:02:34 UTC], ["id", 6]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 11.5ms)
+
+
