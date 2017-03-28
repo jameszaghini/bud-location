@@ -40,7 +40,12 @@ var geojson = {
     ]
 };
 
+<% if !@session.buds.empty? %>
 var center = [<%= @session.buds.first.locations.first.longitude %>, <%= @session.buds.first.locations.first.latitude %>]
+<% else %>
+var center = [0,0]
+<% end %>
+
 
 var map = new mapboxgl.Map({
     container: 'map',
@@ -48,6 +53,8 @@ var map = new mapboxgl.Map({
     zoom: 15,
     style: 'mapbox://styles/mapbox/dark-v9'
 });
+
+map.addControl(new mapboxgl.NavigationControl());
 
 // add markers to map
 geojson.features.forEach(function(marker) {
@@ -74,10 +81,18 @@ geojson.features.forEach(function(marker) {
 
   <p id="notice"><%= notice %></p>
 
-  <h3>Platform:</h3>
-  <%= @session.platform %>
-  <h3>Created:</h3>
-  <%= @session.created_at %>
+  <%= @session.created_at.strftime("%a, %e %b %Y %H:%M:%S %z") %>
+  <br><br>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>PLATFORM</th>
+    </tr>
+    <tr>
+      <td><%= @session.id %></td>
+      <td><%= @session.platform %></td>
+  </table>
+
 <hr>
 
 <% @session.buds.each do | bud | %>
@@ -90,12 +105,14 @@ geojson.features.forEach(function(marker) {
       <th>LAT</th>
       <th>LONG</th>
       <th>DATE</th>
+      <th>DIFF (SEC)</th>
     </tr>
-  <% bud.locations.each do | location | %>
+  <% bud.locations.each_with_index do | location, i | %>
     <tr>
       <td><%= location.latitude %></td>
       <td><%= location.longitude %></td>
-      <td><%= location.created_at %></td>
+      <td><%= location.created_at.strftime("%H:%M:%S") %></td>
+      <td><% if i == 0 %>-<% else %><%= (location.created_at - bud.locations[i-1].created_at).to_i %><% end %></td>
     </tr>
   <% end %>
   </table>
