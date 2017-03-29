@@ -1,5 +1,9 @@
 
 <style>
+
+body, html {height:100%;}
+div.wrap {height:100%; overflow:hidden;}
+
 .marker {
     display: block;
     border: none;
@@ -12,61 +16,60 @@
 h3 { text-transform: uppercase }
 </style>
 
-<div id='map' style='width: 70%; height: 100vh; margin: 0; float: left'></div>
+<div class="wrap">
+  <div id='map' style='width: 70%; height: 100vh; margin: 0; float: left'></div>
+  <div style="float: left; height: 100hv; width:30%; overflow-y: scroll;">
 
+    <p id="notice"><%= notice %></p>
 
-
-<div style="float: left; height: 100hv; width:30%; overflow-y: scroll;">
-
-  <p id="notice"><%= notice %></p>
-
-  <%= @session.created_at.strftime("%a, %e %b %Y %H:%M:%S %z") %>
-  <br><br>
-  <table>
-    <tr>
-      <th>ID</th>
-      <th>PLATFORM</th>
-    </tr>
-    <tr>
-      <td><%= @session.id %></td>
-      <td><%= @session.platform %></td>
-  </table>
-
-<hr>
-
-<% @session.buds.each do | bud | %>
-  <h3><%= bud.identifier %></h3>
-
-  <% if !bud.locations.empty? %>
-
-  <table>
-    <tr>
-      <th>LAT</th>
-      <th>LONG</th>
-      <th>ACCURACY</th>
-      <th>DATE</th>
-      <th>DIFF (SEC)</th>
-    </tr>
-  <% bud.locations.each_with_index do | location, i | %>
-    <tr>
-      <td><%= location.latitude %></td>
-      <td><%= location.longitude %></td>
-      <td><%= location.accuracy %></td>
-      <td><%= location.created_at.strftime("%H:%M:%S") %></td>
-      <td><% if i == 0 %>-<% else %><%= (location.created_at - bud.locations[i-1].created_at).to_i %><% end %></td>
-    </tr>
-  <% end %>
-  </table>
-  </script>
-
-  <% else %>
-    No data
-  <% end %>
+    <%= @session.created_at.strftime("%a, %e %b %Y %H:%M:%S %z") %>
+    <br><br>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>PLATFORM</th>
+      </tr>
+      <tr>
+        <td><%= @session.id %></td>
+        <td><%= @session.platform %></td>
+    </table>
 
   <hr>
 
-<% end %>
+  <% @session.buds.each do | bud | %>
+    <h3><%= bud.identifier %></h3>
 
+    <% if !bud.locations.empty? %>
+
+    <table>
+      <tr>
+        <th>LAT</th>
+        <th>LONG</th>
+        <th>ACCURACY</th>
+        <th>DATE</th>
+        <th>DIFF (SEC)</th>
+      </tr>
+    <% bud.locations.each_with_index do | location, i | %>
+      <tr>
+        <td><%= location.latitude %></td>
+        <td><%= location.longitude %></td>
+        <td><%= location.accuracy %></td>
+        <td><%= location.created_at.strftime("%H:%M:%S") %></td>
+        <td><% if i == 0 %>-<% else %><%= (location.created_at - bud.locations[i-1].created_at).to_i %><% end %></td>
+      </tr>
+    <% end %>
+    </table>
+    </script>
+
+    <% else %>
+      No data
+    <% end %>
+
+    <hr>
+
+  <% end %>
+
+  </div>
 </div>
 
 
