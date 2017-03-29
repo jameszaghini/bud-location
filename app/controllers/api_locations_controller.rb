@@ -14,6 +14,7 @@ class ApiLocationsController < ApplicationController
     location = Location.new
     location.latitude = @json['location']['latitude']
     location.longitude = @json['location']['longitude']
+    location.accuracy = @json['location']['accuracy']
     location.bud_id = bud.id
 
     Session.transaction do
