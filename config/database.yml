@@ -11,7 +11,9 @@ default: &default
 
 development:
   <<: *default
-  database: find_buds_development
+  adapter: sqlite3
+  database: find_buds_dev
+  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
