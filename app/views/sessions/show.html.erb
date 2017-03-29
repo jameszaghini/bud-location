@@ -14,11 +14,15 @@ div.wrap {height:100%; overflow:hidden;}
 }
 
 h3 { text-transform: uppercase }
+
+div#map { width: 70%; height: 100vh; margin: 0; float: left; }
+div#data { float: left; width:30%; overflow-y: scroll; height: 100%; }
+
 </style>
 
 <div class="wrap">
-  <div id='map' style='width: 70%; height: 100vh; margin: 0; float: left'></div>
-  <div style="float: left; width:30%; overflow-y: scroll;">
+  <div id="map"></div>
+  <div id="data">
 
     <p id="notice"><%= notice %></p>
 
