@@ -57,7 +57,7 @@ div#data { float: left; width:30%; overflow-y: scroll; height: 100%; }
       <tr>
         <td><%= location.latitude.round(8) %></td>
         <td><%= location.longitude.round(8) %></td>
-        <td><%= location.accuracy %></td>
+        <td><%= location.accuracy.floor %></td>
         <td><%= location.created_at.strftime("%H:%M:%S") %></td>
         <td><% if i == 0 %>-<% else %><%= (location.created_at - bud.locations[i-1].created_at).to_i %><% end %></td>
       </tr>
