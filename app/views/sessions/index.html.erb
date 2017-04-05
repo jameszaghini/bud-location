@@ -18,7 +18,7 @@
     <% @sessions.each do |session| %>
       <tr>
         <td><%= session.id %></td>
-        <td><%= session.created_at.strftime("%A, %d %b %Y %l:%M %p") %></td>
+        <td><%= session.created_at.strftime("%d.%m.%Y %H:%M:%S") %></td>
         <td><%= session.platform %></td>
         <td><%= link_to 'Show', session %></td>
         <td><%= link_to 'Destroy', session, method: :delete, data: { confirm: 'Are you sure?' } %></td>
